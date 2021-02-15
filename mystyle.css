@@ -1,0 +1,57 @@
+
+
+/* IDEA:    <link rel="stylesheet" href="mystyle.css"  type="text/css">
+ */
+<style>
+
+  html,body{
+            height: 100%;
+            margin: 0;
+          }
+  .bg-text {
+          position:fixed;/*fixed는 부모 중 누군가 relative가 있는지 상관하지 않는다.*/
+          top:0px; /*가장 시조가 되는 (아마도 여기서는)메뉴가 밑에서만 머무는 문제 해결*/
+          width: 100%;
+          }
+  .bg-image {
+          background-color: #cccccc; /* Used if the image is unavailable */
+          height:100%; /* You must set a specified height */
+          background-position: center; /* Center the image */
+          background-repeat: no-repeat; /* Do not repeat the image */
+          background-size: cover; /* Resize the background image to cover the entire container */
+       }
+
+    .img1{ background-image: url("page1.jpg");}
+    .img2{ background-image: url("page2.jpg");}
+    .img3{ background-image: url("page3.jpg");}
+    .img4{ background-image: url("page4.jpg");}
+    .img5{ background-image: url("page5.jpg");}
+    .img6{ background-image: url("page6.png");}
+
+      a{
+         color: black;
+         font-size:15px;
+         text-decoration:none;
+         text-align: center;}
+     h1{
+         margin:0;
+         color: white;
+         font-size: 13px;
+         text-align:center;
+         border:10px none;
+         background-color: #deb887;
+         margin: 0;
+         padding:10px;
+       }
+   img{
+         position: fixed;
+         right: 50px;
+         top: 80px;
+ }
+  #grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 10px;
+        padding-top:25px;
+}
+</style>
