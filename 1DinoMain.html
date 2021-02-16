@@ -2,63 +2,82 @@
 <html>
 
 <head>
-  <title>dinotaeng home site practice</title>
+  <title>Scroll dinotaeng home site practice</title>
   <meta charset="utf-8">
 
-
-   <style>
-
-     html,body{
-               height: 100%;
-               margin: 0;
-             }
-     .bg-text {
-             position:fixed;/*fixed는 부모 중 누군가 relative가 있는지 상관하지 않는다.*/
-             top:0px; /*가장 시조가 되는 (아마도 여기서는)메뉴가 밑에서만 머무는 문제 해결*/
-             width: 100%;
-             }
-     .bg-image {
-             background-color: #cccccc; /* Used if the image is unavailable */
-             height:100%; /* You must set a specified height */
-             background-position: center; /* Center the image */
-             background-repeat: no-repeat; /* Do not repeat the image */
-             background-size: cover; /* Resize the background image to cover the entire container */
-          }
-
-       .img1{ background-image: url("page1.jpg");}
-       .img2{ background-image: url("page2.jpg");}
-       .img3{ background-image: url("page3.jpg");}
-       .img4{ background-image: url("page4.jpg");}
-       .img5{ background-image: url("page5.jpg");}
-       .img6{ background-image: url("page6.png");}
-
-         a{
-            color: black;
-            font-size:15px;
-            text-decoration:none;
-            text-align: center;}
-        h1{
-            margin:0;
-            color: white;
-            font-size: 13px;
-            text-align:center;
-            border:10px none;
-            background-color: #deb887;
+<style>
+  html,body{
+            height: 100%;
             margin: 0;
-            padding:10px;
           }
-      img{
-            position: fixed;
+  .bg-text {
+          position:fixed;
+          top:0px;
+          width: 100%;
+          }
+  .bg-image {
+          background-color: #cccccc; /* Used if the image is unavailable */
+          height: 100%; /* You must set a specified height */
+          background-position: center; /* Center the image */
+          background-repeat: no-repeat; /* Do not repeat the image */
+          background-size: cover; /* Resize the background image to cover the entire container */
+       }
+
+    .img1{ background-image: url("page1.jpg");}
+    .img2{ background-image: url("page2.jpg");}
+    .img3{ background-image: url("page3.jpg");}
+    .img4{ background-image: url("page4.jpg");}
+    .img5{ background-image: url("page5.jpg");}
+    .img6{ background-image: url("page6.png");}
+
+
+      a{
+         color: black;
+         font-size:15px;
+         text-decoration:none;
+         text-align: center;
+       }
+     h1{
+         margin:0;
+         color: white;
+         font-size: 13px;
+         text-align:center;
+         border:10px none;
+         background-color: #deb887;
+         padding:10px;
+       }
+   img{
+         position: fixed;
+       }
+#magnifier{
             right: 50px;
             top: 80px;
+
+        }
+  #mallow{
+          width: 70px;
+          height: 70px;
+          right: 19px;
+          bottom: 19px;
+          }
+
+  #grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 10px;
+        padding-top:25px;
+      }
+
+    /* IDEA: page2 start  */
+    h3{
+      bottom:100px;
+      margin:0;
+      color: coral;
+      font-size: 15px;
+      text-align:center;
     }
-     #grid{
-           display: grid;
-           grid-template-columns: 1fr 1fr 1fr 1fr;
-           padding: 10px;
-           padding-top:25px;
-   }
-   </style>
+
+</style>
 
 </head>
   <body>
@@ -69,19 +88,27 @@
     <div class="bg-image img5"></div>
     <div class="bg-image img6"></div>
 
-  <div class="bg-text">
-
+  <div class="bg-text"> <!--고정 메뉴-->
     <h1>Stories in Scribbles! Welcome to new Dinotaeng :p</h1>
-
       <div id="grid">
         <a href="1DinoMain.html" > Dinotaeng Stories <br>in Scribbles</a>
-        <a href="2AboutUs.html" >About Us</a>
-        <a href="3Characters.html" >Charaters</a>
-        <a href="4LogIn.html" >Log In</a>
+        <a href="2AboutUs.html" > About Us</a>
+        <a href="3Characters.html" > Charaters</a>
+        <a href="4LogIn.html" > Log In</a>
+      </div>
   </div>
+        <!-- search (before update)-->
+        <img  id="magnifier" src="magnifier.png" alt="magnifier" width="2%">
+        <!-- marshmallow click to link-->
+        <a href="https://www.instagram.com/dinotaeng/" target="_blank">
+            <img  id="mallow" src="mallow.png" alt="mallow" >
+        </a>
 
-     <img href="https://dinotaeng.com/" src="magnifier.png" alt="magnifier" width="2%">
-  </div>        <!--<img src="sky.jpg" width="50%">-->
+  <!-- IDEA: page 2 -->
+    <h3>Tag us with your stories</h3>
+
+
+
 
   </body >
 </html>
