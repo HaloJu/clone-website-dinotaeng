@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Scroll dinotaeng home site practice</title>
+  <title> dinotaeng home site practice</title>
   <meta charset="utf-8">
 
 <style>
@@ -10,24 +10,36 @@
             height: 100%;
             margin: 0;
   }
+  body{
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+
+  }
   .bg-text {
       position:fixed;
       top:0px;
       width: 100%;
   }
+  #grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        padding: 10px;
+        padding-top:25px;
+      }
+
 .main img {
       width: 100%;
- }
-       img{
       border: none;
       vertical-align: top;
       margin:0;
       padding:0;
-    }
+ }
 
       a{
         outline: none;
-         color: black;
+         color: white;
          font-size:15px;
          text-decoration: none;
          text-align: center;
@@ -43,25 +55,12 @@
        }
 
 #magnifier{
+            position: fixed;
             right: 50px;
             top: 80px;
 
         }
-  #mallow{
-          width: 70px;
-          height: 70px;
-          right: 19px;
-          bottom: 19px;
-          }
 
-  #grid{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        padding: 10px;
-        padding-top:25px;
-      }
-
-    /* IDEA: page2 start  */
     h3{
       bottom:100px;
       margin:0;
@@ -72,6 +71,35 @@
   .fix-icon a.instagram {
     dispaly: block;
   }
+
+  .footer_area {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    padding: 70px 7.5%;
+    box-sizing: border-box;
+    background: #fff;
+  }
+  .footer-info-detail ul li{
+    height: 70px;
+    width: 25%;
+    box-sizing:border-box;
+  }
+
+li{
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+  .footer-info-basic{
+        margin-top: 70px;
+  }
+  #mallow{
+          position: fixed;
+          width: 70px;
+          height: 70px;
+          right: 19px;
+          bottom: 19px;
+          }
 </style>
 
 </head>
@@ -88,6 +116,7 @@
           </div>
           <div class="header center">
             <div id="grid">
+              <img src="Dinotaeng Main Logo.png" alt="Logo" width="70%">
               <a href="1DinoMain.html" > Dinotaeng Stories <br>in Scribbles</a>
               <a href="2AboutUs.html" > About Us</a>
               <a href="3Characters.html" > Charaters</a>
@@ -96,7 +125,7 @@
           </div>
           <div class="header right">
             <!-- search (before update)-->
-            <img  id="magnifier" src="magnifier.png" alt="magnifier" width="2%">
+            <img  id="magnifier" src="magnifier.png" alt="magnifier" width="1.5%">
           </div>
         </div>
       </div>
@@ -132,8 +161,8 @@
 
    </main>
   <footer>
-    <div class="fix footer">
-      <div class="footer area">
+    <div class="fix_footer">
+      <div class="footer_area">
         <div class="footer-info-detail">
            <div class="title">Dinotaeng</div>
            <ul>
