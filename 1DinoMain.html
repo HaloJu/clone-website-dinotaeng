@@ -15,7 +15,6 @@
     font-size: 12px;
     font-weight: 400;
     letter-spacing: 1px;
-
   }
   .bg-text {
       position:fixed;
@@ -36,14 +35,14 @@
       margin:0;
       padding:0;
  }
-
-      a{
+.header-center  a{
         outline: none;
          color: white;
          font-size:15px;
-         text-decoration: none;
          text-align: center;
+         text-decoration: none;
        }
+
      h1{
          margin:0;
          color: white;
@@ -65,32 +64,71 @@
       bottom:100px;
       margin:0;
       color: coral;
-      font-size: 15px;
+      font-size: 17px;
       text-align:center;
+      padding: 20px;
     }
-  .fix-icon a.instagram {
-    dispaly: block;
-  }
 
-  .footer_area {
+  .footer{
     position: relative;
     width: 100%;
-    margin: auto;
-    padding: 70px 7.5%;
+    margin: 0 auto;
+    padding: 45px 7.5%;
     box-sizing: border-box;
     background: #fff;
+  }
+  .footer_area {
+    margin: 0;
+  }
+  .footer-info-detail .title{
+    padding-bottom: 30px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #c51a27;
+  }
+  ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+  li{
+    list-style: none;
+  }
+  .footer-info-detail ul{
+    font-size: 15;
+    letter-spacing: 5;
   }
   .footer-info-detail ul li{
     height: 70px;
     width: 25%;
     box-sizing:border-box;
   }
-
-li{
+#footer-flexbox{
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-space-around;
+}
+#footer-flexbox li {
   display: list-item;
   text-align: -webkit-match-parent;
+  height: auto;
+  padding: 20px;
+  padding-top: 0px;
+  font-weight: bold;
+}
+#footer-flexbox a{
+    text-decoration: none;
+    color: black;
 }
   .footer-info-basic{
+        display: inline-block;
+        width: 100%;
+        vertical-align: bottom;
+        text-align: right;
         margin-top: 70px;
   }
   #mallow{
@@ -100,6 +138,10 @@ li{
           right: 19px;
           bottom: 19px;
           }
+  .fix-icon a.instagram {
+    dispaly: block;
+  }
+
 </style>
 
 </head>
@@ -114,7 +156,7 @@ li{
           <div class="header left">
 
           </div>
-          <div class="header center">
+          <div class="header-center">
             <div id="grid">
               <img src="Dinotaeng Main Logo.png" alt="Logo" width="70%">
               <a href="1DinoMain.html" > Dinotaeng Stories <br>in Scribbles</a>
@@ -162,14 +204,15 @@ li{
    </main>
   <footer>
     <div class="fix_footer">
+      <div class="footer">
       <div class="footer_area">
         <div class="footer-info-detail">
            <div class="title">Dinotaeng</div>
-           <ul>
+           <ul id="footer-flexbox">
              <li>
-               <a href="#">Terms & Conditions</a>
-               <a href="#">Guide</a>
-               <a href="#">Privacy Policy</a>
+               <a href="https://www.instagram.com/dinotaeng/">Terms & Conditions</a><br>
+               <a href="https://www.instagram.com/dinotaeng/">Guide</a><br>
+               <a href="https://www.instagram.com/dinotaeng/">Privacy Policy</a><br>
              </li>
              <li>
                "CS Center : 000-0000-0000"
@@ -213,6 +256,8 @@ li{
           <img  id="mallow" src="mallow.png" alt="mallow" >
       </a>
     </div>
+    </div>
+
   </footer>
 
   </body >
