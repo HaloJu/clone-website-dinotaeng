@@ -34,18 +34,14 @@
 
   }
 
+
+  /*PC Header*/
+
   #header_category{
     display: flex;
-    min-height: calc(100vh - 90vh);
+    max-height: calc(100vh - 90vh);
     justify-content: space-between;
     align-items:center;
-  }
-
-  #mobile_header_category{
-    display: flex;
-    min-height: calc(100vh - 90vh);
-    justify-content: space-between;
-    align-items:flex-start;
   }
 
   #category_left{
@@ -55,6 +51,8 @@
 
   #Logo{
     max-width: 100%;
+    box-sizing: border-box;
+    align:center;
     /* IDEA: container인 category_left의 크기>Logo img의 크기 */
     /* IDEA: so,I set Logo img 'max-width:100%'.*/
     /* IDEA: and therefore does not stretch to fill the container.*/
@@ -118,7 +116,7 @@
     padding: 25px;
   }
 
-  .category_center a,#category_right a{
+   .category_center a,#category_right a {
     outline: none;
     color: white;
     font-size:15px;
@@ -127,6 +125,48 @@
     padding: 10px;
   }
 
+
+  /*Mobile Header*/
+
+  #mobile_header_category{
+    display: flex;
+    max-height: calc(100vh - 90vh);
+    justify-content: space-between;
+    align-items:center;
+  }
+
+  #mobile_category_left{
+    display: flex;
+    flex-basis: 25%;
+    padding: 25px;
+  }
+  #mobile_category_left a, #mobile_category_right span{
+   outline: none;
+   color: white;
+   font-size:15px;
+   text-align: center;
+   text-decoration: none;
+   padding: 10px;
+   box-sizing: border-box;
+
+ }
+
+ .mobile_category_center{
+   display: flex;
+   flex-basis: 25%;
+   padding: 10px;
+   max-width: 100%;
+   box-sizing: border-box;
+   text-align: center;
+
+ }
+
+  #mobile_category_right{
+    display: flex;
+    flex-basis: 25%;
+    padding: 25px;
+    text-align: center;
+  }
 
   /*Nav*/
 
