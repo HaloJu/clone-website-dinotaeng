@@ -5,6 +5,18 @@
    <title> dinotaeng home site practice</title>
    <meta charset="utf-8">
    <link rel="stylesheet" href="1DinoMain.css">
+
+   <script>
+     function openNav(){
+       document.getElementById("mySidenav").style.width = "250px";
+       document.sidenav.style.padding = "30px";
+     }
+
+     function closeNav(){
+       document.getElementById("mySidenav").style.width = "0";
+     }
+   </script>
+
  </head>
 
  <body>
@@ -88,73 +100,73 @@
                   <a href="C3Store.html">Store</a>
                 </li>
             </div>
+
             <div class="category_center">
               <div class="mobile">
                 <img id="Logo" src="Dinotaeng Main Logo.png" alt="Logo">
               </div>
             </div>
+
             <div id="category_right">
-              <button type="button" name="button">
-                <a href="#">Menu</a>
-              </button>
-              <div class="mobile_menu">
-                <div class="top">
-                    <a href="#">Log In</a>
-                    <a href="#">Cart</a>
-                    <a href="#">Account</a>
+              <nav>
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                      <div id="close_box">
+                        close_box
+                      </div>
+                    </a>
+
+                  <div class="mobile_menu">
+                      <div class="1_top" id="mobile_menu_box">
+                        <a href="#">Log In</a>
+                        <a href="#">Cart</a>
+                        <a href="#">Account</a>
+                      </div>
+                      <div class="2_center" id="mobile_menu_box">
+                        <a href="#">About Us</a>
+                        <a href="">Characters</a>
+                        <a href="">Store</a>
+                        <a href="">Board</a>
+                        <a href="">Contact</a>
+                      </div>
+                      <div class="3_bottom" id="mobile_menu_box">
+                        <a href="">NOTICE</a>
+                        <a href="">Q&A</a>
+                        <a href="">SEARCH</a>
+                      </div>
+                      <div class="4_information" id="mobile_menu_box">
+                        <ul id="information-flexbox">
+                          <li>
+                            "CUSTOMER CENTER"
+                            <br><br>
+                            "000-0000-0000"
+                            <br><br>
+                            "Mon-FRI. 10AM - 6PM"
+                            <br>
+                            "[1-2PM LUNCHTIME]"
+                            <br>
+                            "SAT / SUN / HOLIDAY OFF"
+                          </li>
+                          <li>
+                            "Bank INFO"
+                            <br>
+                             "국민은행 00000-000000-00"
+                            <br>
+                             "다이노탱"
+                          </li>
+
+                        </ul>
+                      </div>
+                  </div>
+
                 </div>
-                <div class="center">
-                    <a href="#">About Us</a>
-                    <a href="">Characters</a>
-                    <a href="">Store</a>
-                    <a href="">Board</a>
-                    <a href="">Contact</a>
-                </div>
-                <div class="bottom">
-                    <a href="">NOTICE</a>
-                    <a href="">Q&A</a>
-                    <a href="">SEARCH</a>
-                </div>
-                <div class="information">
-                  <ul id="information-flexbox">
-                    <li>
-                      "CUSTOMER CENTER"
-                      <br><br>
-                      "000-0000-0000"
-                      <br><br>
-                      "Mon-FRI. 10AM - 6PM"
-                      <br>
-                      "[1-2PM LUNCHTIME]"
-                      <br>
-                      "SAT / SUN / HOLIDAY OFF"
-                    </li>
-                    <li>
-                      "Bank INFO"
-                      <br>
-                       "국민은행 00000-000000-00"
-                      <br>
-                       "다이노탱"
-                    </li>
-
-                  </ul>
-                </div>
-              </div>
-
-
-
-
-
-
-
-
-
-            </div>
-
+                <span onclick="openNav()">menu</span>
+              </nav>
           </div>
 
+         </div>
         </div>
-
-
+      </div>
    </header>
 
    <main>
