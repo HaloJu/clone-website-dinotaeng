@@ -49,7 +49,7 @@
     flex-basis: 25%
   }
 
-  #Logo{
+  #PC_Logo{
     max-width: 100%;
     box-sizing: border-box;
     align:center;
@@ -116,7 +116,7 @@
     padding: 25px;
   }
 
-   .category_center a,#category_right a {
+   .category_center a, #category_right a{
     outline: none;
     color: white;
     font-size:15px;
@@ -140,37 +140,49 @@
     flex-basis: 25%;
     padding: 25px;
   }
+
   #mobile_category_left a, #mobile_category_right span{
    outline: none;
    color: white;
    font-size:15px;
-   text-align: center;
    text-decoration: none;
    padding: 10px;
    box-sizing: border-box;
+  }
 
- }
-
- .mobile_category_center{
+  .mobile_category_center{
    display: flex;
    flex-basis: 25%;
    padding: 10px;
-   max-width: 100%;
+   /* max-width: 100%; */
    box-sizing: border-box;
-   text-align: center;
+  }
 
- }
+  #mobile_Logo{
+    max-width: 100%;
+    box-sizing: border-box;
+    align:center;
+    /* IDEA: container인 category_left의 크기>Logo img의 크기 */
+    /* IDEA: so,I set Logo img 'max-width:100%'.*/
+    /* IDEA: and therefore does not stretch to fill the container.*/
+  }
 
   #mobile_category_right{
     display: flex;
     flex-basis: 25%;
     padding: 25px;
-    text-align: center;
   }
 
-  /*Nav*/
+  #mobile_category_right a{
+    outline: none;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+  }
 
- .sidenav{
+  /*mobile_category_right > Nav*/
+
+  .sidenav{
     height: 100%; /* 100% Full-height */
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
@@ -179,7 +191,8 @@
     right:0;/*open nav fron right*/
     background-color: white; /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
-    padding: 0px;   /* X Place content 60px from the top */
+    box-sizing: border-box;
+    padding: 0px;
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
   }
 
@@ -187,12 +200,14 @@
   .sidenav a{
     padding: 0px;
     text-decoration: none;
-    font-size: 17px;
     color: #818181;
     display: block;
     transition: 0.3s;
     flex-basis: auto;
     flex-grow: 1;
+  }
+  #close_box{
+    font-size: 5px;
   }
 
   /* When you mouse over the navigation links, change their color */
@@ -209,7 +224,8 @@
     margin-left: 50px;
   }
 
-  /* IDEA: real game - dinotaeng */
+  /*mobile_category_right > mobile_menu*/
+
   .mobile_menu{
     display: flex;
     direction: column;
@@ -217,37 +233,49 @@
     justify-content: space-evenly;
   }
 
-  .mobile_menu_box{
+  #mobile_menu_box{
     box-sizing: border-box;
+    padding:10px;
   }
 
   #close_box, #mobile_menu_box a{
     color:black;
   }
 
-  #top,#bottom{
+  #m1_top,#m3_bottom{
     display: flex;
     min-height: calc(100vh - 90vh);
     max-height: calc(100vh - 90vh);
     width: 100%;
     justify-content: space-evenly;
     align-items: center;
-
   }
-  #top a,#bottom a{
+
+  #m1_top a,#m3_bottom a{
     text-align: center;
     box-sizing: border-box;
+    font-size:14px;
   }
 
-  #center,#information{
+  #m2_center,#m4_information{
     min-height: calc(100vh - 60vh);
     max-height: calc(100vh - 60vh);
     min-width: 100%;
     max-width: 100%;
+    text-align: left;
   }
 
-  #center a{
-      font-size: 20px;
+  #m2_center a{
+    font-size: 20px;
+    padding: 5px 10px 0px 10px;
+  }
+
+  #m4_information a{
+    font-size: 10px;
+  }
+  #m4_information li{
+    box-sizing: border-box;
+    padding: 10px;
   }
 
 
@@ -298,7 +326,7 @@
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    padding-inline-start: 40px;
+    padding-inline-start:0px;
   }
 
   li{
